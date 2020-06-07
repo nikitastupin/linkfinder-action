@@ -2,7 +2,7 @@
 
 This action uses [LinkFinder](https://github.com/GerbenJavado/LinkFinder) to fetch JavaScript files, extract URLs from them and store extracted URLs on the file system.
 
-Combined with [Checkout](https://github.com/actions/checkout), [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action) and GitHub push notifications this action may serve as email notifier for new endpoints. Each notification will send you a link to git commit which will show (potentially) added / removed endpoints at your target. As nice bonus all endpoints will be stored in commit history. See [Example usage](#example-usage) section for an example. 
+Combined with [Checkout](https://github.com/actions/checkout), [git-auto-commit](https://github.com/stefanzweifel/git-auto-commit-action) and GitHub push notifications this action may serve as email notifier for new endpoints. Each notification will send you a link to git commit which will show (potentially) added / removed endpoints at your target. As nice bonus all endpoints will be stored in commit history. See [Example usage](#example-usage) section or [linkfinder-action-demo](https://github.com/nikitastupin/linkfinder-action-demo) for an example. 
 
 Inspired by [The poor man's bug bounty monitoring setup](https://edoverflow.com/2018/the-poor-mans-monitoring-setup/) and [GitHub Actions](https://github.com/features/actions).
 
