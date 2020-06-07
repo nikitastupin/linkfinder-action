@@ -1,0 +1,19 @@
+name: 'LinkFinder GitHub Action'
+description: 'Extract URLs from JavaScript files'
+inputs:
+  domains:
+    description: 'Space separated list of domains'
+    default: ''
+  urls:
+    description: 'Space separated list of URLs to JavaScript files'
+    default: ''
+  cookies:
+    description: 'This will be passed to -c	--cookies LinkFinder''s parameter'
+    default: ''
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.domains }}
+    - ${{ inputs.urls }}
+    - ${{ inputs.cookies }}
