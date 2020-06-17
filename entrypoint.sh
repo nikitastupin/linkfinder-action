@@ -10,7 +10,7 @@ if [ -z "$1" -a -z "$2" ]; then
 fi
 
 git clone --depth=1 https://github.com/GerbenJavado/LinkFinder.git /tmp/LinkFinder
-pip3 install -r /tmp/LinkFinder/requirements.txt
+pip3 install jsbeautifier
 
 if [ -n "$1" ]; then
   echo "$1" | tr " " "\n" | while read domain; do
